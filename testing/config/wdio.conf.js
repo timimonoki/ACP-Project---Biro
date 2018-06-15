@@ -10,9 +10,11 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        // 'testing/tests/subscribe-newsletter-test.ts',
-        // 'testing/tests/unsubscribe-newsletter-test.ts',
-        'testing/tests/contact-test.ts'
+        'testing/tests/subscribe-newsletter-test.ts',
+        'testing/tests/unsubscribe-newsletter-test.ts',
+        'testing/tests/contact-test.ts',
+        'testing/tests/register-test.ts',
+        'testing/tests/login-test.ts'
     ],
     // Patterns to exclude.
     exclude: [
