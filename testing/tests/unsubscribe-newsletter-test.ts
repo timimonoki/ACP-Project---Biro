@@ -16,7 +16,8 @@ describe("Unsubscribe newsletter test - ", function () {
         mainPage.getSubscribeNewsletterLink.click();
         mainPage.getNewsletterForm.waitForVisible(5000);
         mainPage.getUnsubscribeEmailInput.setValue(Constants.EMAIL);
-        mainPage.getUnsubscribeButton.scroll(0,150);
+        var location = mainPage.getUnsubscribeButton.getLocation();
+        mainPage.getUnsubscribeButton.scroll(0, location.y-100);
         mainPage.getUnsubscribeButton.click();
     });
 });

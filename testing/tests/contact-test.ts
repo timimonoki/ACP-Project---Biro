@@ -21,7 +21,8 @@ describe("Contact page test - ", function () {
         expect(contactPage.getContactHeader.isVisible()).toBe(true, "Pagina de contact nu s-a deschis corect");
 
         //after clicking Facebook link, the website should open in a new tab
-        contactPage.getFacebookContactLink.scroll(0,300);
+        var location = contactPage.getFacebookContactLink.getLocation();
+        contactPage.getFacebookContactLink.scroll(0,location.y - 100);
         contactPage.getFacebookContactLink.click();
         var allTabs = browser.getTabIds();
         browser.switchTab(allTabs[1]);
