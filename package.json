@@ -4,6 +4,7 @@
   "description": "Automated tests for ACP project",
   "main": "index.js",
   "scripts": {
+    "start": "java -jar -Dwebdriver.chrome.driver=selenium\\chromedriver_2.36.exe selenium\\selenium-server-standalone-3.12.0.jar",
     "test": "node_modules\\.bin\\wdio testing\\config\\wdio.conf.js"
   },
   "author": "Biro Norbert",
