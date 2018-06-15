@@ -1,0 +1,21 @@
+{
+  "name": "automation-tests-biro",
+  "version": "1.0.0",
+  "description": "Automated tests for ACP project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\wdio testing\\config\\wdio.conf.js"
+  },
+  "author": "Biro Norbert",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/webdriverio": "^4.10.2",
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.1",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "wdio-jasmine-framework": "^0.3.4"
+  }
+}
